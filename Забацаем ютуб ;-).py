@@ -50,6 +50,7 @@ class Engine:
         # Выход из аккаунта
 
         Engine.current_user = None
+        Engine.current_user_age = None
 
     def add(self, *video_add):
 
