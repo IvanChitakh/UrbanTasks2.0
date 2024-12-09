@@ -41,13 +41,7 @@ class AquaticAnimal(Animal):
     _degree_of_danger = 3
 
     def dive_in(self, dz):
-        print("состояние ДО: ", self._cords)
         self._cords[2] -= int(dz * (self.speed / 2))
-        print("результат вычислений", int(dz * (self.speed / 2)))
-        print("cостояние после", self._cords[2])
-
-    def move_to_one_point(self):
-        super().move(1, 2, 3)
 
 
 class PoisonousAnimal(Animal):
